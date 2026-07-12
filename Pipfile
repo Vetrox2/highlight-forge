@@ -1,0 +1,34 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+verify_ssl = true
+
+[packages]
+torch = {version = "*", index = "pytorch-cu130"}
+torchvision = {version = "*", index = "pytorch-cu130"}
+torchaudio = {version = "*", index = "pytorch-cu130"}
+moviepy = "==1.0.3"
+ffmpeg-python = "==0.2.0"
+librosa = "==0.10.2"
+soundfile = "==0.12.1"
+transformers = "==4.44.2"
+accelerate = "==0.34.2"
+openai-whisper = "*"
+numba = ">=0.59"
+sentencepiece = "==0.2.0"
+einops = "==0.8.0"
+numpy = "==1.26.4"
+pillow = "==10.4.0"
+tqdm = "==4.66.5"
+scenedetect = "==0.6.4"
+rawpy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
