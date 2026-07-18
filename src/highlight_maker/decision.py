@@ -24,9 +24,9 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from highlight_maker.analysis_tools.audio_analysis import compute_energy_timeline
-from highlight_maker.analysis_tools.motion_analysis import analyze_motion
-from highlight_maker.analysis_tools.frame_analysis import extract_frame_at, load_model, unload_model, tag_segment
+from analysis_tools.audio_analysis import compute_energy_timeline
+from analysis_tools.motion_analysis import analyze_motion
+from analysis_tools.frame_analysis import extract_frame_at, load_model, unload_model, tag_segment
 
 
 @dataclass
